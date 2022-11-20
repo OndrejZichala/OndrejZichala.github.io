@@ -191,7 +191,7 @@ p {
     padding: 1rem;
     border-radius: 25%;
     margin-bottom: 1rem;
-    width: 4rem;
+    width: 23%;
 }
 #project {
     display: flex;
@@ -200,7 +200,7 @@ p {
     flex: 1;
 }
 #project .project-img {
-    background: url("https://images.unsplash.com/photo-1642932163549-3af44da6017f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=687&q=80") no-repeat center center/cover;
+    background: url("https://images.unsplash.com/photo-1548705085-101177834f47?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1632&q=80") no-repeat center center/cover;
 }
 #images .items {
     display: flex;
