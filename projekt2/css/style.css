@@ -37,7 +37,7 @@ body {
 }
 
 p {
-    margin: 0.75rem 0;
+    margin: 0rem 0.75rem;
 }
 
 /*NAVBAR*/
@@ -191,7 +191,7 @@ p {
     padding: 1rem;
     border-radius: 25%;
     margin-bottom: 1rem;
-    width: 23%;
+
 }
 #project {
     display: flex;
@@ -214,6 +214,7 @@ p {
 }
 #contact {
     display: flex;
+
 }
 #contact div {
     flex: 1;
@@ -232,4 +233,8 @@ p {
 }
 #contact h3 {
     margin-top: 2rem;
+}
+#main-footer {
+    height: 400px;
+    display: flex;
 }

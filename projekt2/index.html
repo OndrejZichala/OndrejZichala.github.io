@@ -6,6 +6,8 @@
     <meta name="description" content="Projekt se bude zabívat"/>
     <meta name="keywords" content="">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width: 1100px)">
+    <link rel="stylesheet" href="./css/mobile.css" media="screen and (max-width: 768px)">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
@@ -42,7 +44,7 @@
                 <div><h3>Občerstvení</h3>
                     <p>K dizpozici skvělá restaurace v areálu Jump areny.</p></div>
             </div>
-            <div class="item"><i class="fa-solid fa-person-half-dress fa-2x"></i>
+            <div class="item"><i class="fa-solid fa-children fa-2x"></i>
                 <div><h3>Odborný dozor</h3>
                     <p>Děti mohou přijít sami, náš odborný dozor na ně dohlédne.</p></div>
             </div>
@@ -67,7 +69,7 @@
     <div class="container">
         <h2 class="m-heading text-center">Ilustrační <span class="text-primary">obrázky</span></h2>
         <div class="items py-1">
-            <div><img src="https://images.unsplash.com/photo-1593490568221-5fd8a0698ad8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJhbXBvbGluZXx8fHx8fDE2Njg5NDc1MzE&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=180" alt="Ilustrační obrázek"></div>
+            <div><img src="https://images.unsplash.com/photo-1593490568221-5fd8a0698ad8?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJhbXBvbGluZXx8fHx8fDE2Njg5NDc1MzE&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=180  " alt="Ilustrační obrázek"></div>
             <div><img src="https://images.unsplash.com/photo-1536336978327-65b24c1ec1da?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJhbXBvbGluZXx8fHx8fDE2Njg5NDcyNzE&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=180" alt="Ilustrační obrázek"></div>
             <div><img src="https://images.unsplash.com/photo-1642932163549-3af44da6017f?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJhbXBvbGluZXx8fHx8fDE2Njg5NDczMjM&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=180" alt="Ilustrační obrázek"></div>
             <div><img src="https://images.unsplash.com/photo-1543816954-1e9d3d4ba69d?crop=entropy&cs=tinysrgb&fit=crop&fm=jpg&h=300&ixid=MnwxfDB8MXxyYW5kb218MHx8dHJhbXBvbGluZXx8fHx8fDE2Njg5NDczNjA&ixlib=rb-4.0.3&q=80&utm_campaign=api-credit&utm_medium=referral&utm_source=unsplash_source&w=180" alt="Ilustrační obrázek"></div>
@@ -150,11 +152,11 @@
 
         if (cur_pos > 350) {
             document.querySelector('#navbar').style.opacity = 0.9;
-            document.querySelector('#showcase .source').style.display = "none";
+
         }
         else {
             document.querySelector('#navbar').style.opacity = 1;
-            document.querySelector('#showcase .source').style.display = "block";
+
         }
 
         // Navigation active state on scroll
