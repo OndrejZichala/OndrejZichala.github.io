@@ -145,9 +145,11 @@
         $("#navbar ul").slideToggle("slow")
     });
 
+
+    if($(window).with ()<501 ) {
     $("#navbar ul li a ").click(function (){
         $("navbar ul").hide();
-    })
+    })}
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
