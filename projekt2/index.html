@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Projekt se bude zabívat"/>
+    <meta name="description" content="Projekt se bude zabývat"/>
     <meta name="keywords" content="">
     <link rel="stylesheet" href="./css/style.css">
     <link rel="stylesheet" href="./css/widescreen.css" media="screen and (min-width: 1100px)">
@@ -20,6 +20,7 @@
 <nav id="navbar">
     <div id="logo"><a href="index.html"><span class="text-primary"><i
             class="fa-sharp fa-solid fa-person"></i> Jump</span> arena</a></div>
+    <a href="#" id="hambac"><i class="fa fa-bars fa-2x"></i> </a>
     <ul>
         <li><a href="#home">Úvod</a></li>
         <li><a href="#about">O nás</a></li>
@@ -140,6 +141,13 @@
         integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 <script>
+    $("#navbar #hambac").click(function (){
+        $("#navbar ul").slideToggle("slow")
+    });
+
+    $("#navbar ul li a ").click(function (){
+        $("navbar ul").hide();
+    })
     // Smooth scrolling
     $('#navbar a, .btn').on('click', function (event) {
         if (this.hash !== '') {
@@ -147,11 +155,11 @@
             const hash = this.hash;
             $('html, body').animate(
                 {
-                    scrollTop: $(hash).offset().top - 100
+                    scrollTop: $(hash).offset().top - 260
                 }, 800
             )
         }
-    })
+    });
 
 
     var nav_sections = $('section');
@@ -163,13 +171,13 @@
 
         // Menu Opacity on scrolling and hidding source
 
-        if (cur_pos > 350) {
-            document.querySelector('#navbar').style.opacity = 0.9;
+        //if (cur_pos > 350) {
+          //  document.querySelector('#navbar').style.opacity = 0.9;
 
-        } else {
-            document.querySelector('#navbar').style.opacity = 1;
+       // } else {
+          //  document.querySelector('#navbar').style.opacity = 1;
 
-        }
+       // }
 
         // Navigation active state on scroll
 

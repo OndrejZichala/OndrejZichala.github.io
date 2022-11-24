@@ -67,6 +67,9 @@ p {
     text-decoration: none;
 
 }
+#navbar #hambac {
+    display: none;
+}
 
 #navbar ul li a {
     padding: 0.5rem;
