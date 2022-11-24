@@ -26,6 +26,10 @@
         align-items: stretch;
         display: none;
     }
+    #navbar ul li:first-child {
+        margin-top: 0.5rem;
+        border-top: #f4f4f4 1px dotted;
+    }
     #navbar ul li {
         padding: 0.5rem;
         border-bottom: #f4f4f4 1px dotted;
