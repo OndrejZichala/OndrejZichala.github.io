@@ -1,0 +1,158 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+.clr{
+    clear:both;
+}
+a{
+    text-decoration: none;
+}
+body{
+    background-color: #202124;
+}
+#navbar {
+    background-color: #202124;
+
+}
+#navbar ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    padding: 2vh 3vh;
+    list-style: none;
+}
+
+#navbar ul li a{
+    color: lightgrey;
+    margin: 0 1.5rem;
+    transition: 0.5s;
+}
+#navbar ul li a:hover{
+    color: white;
+}
+#navbar ul li a.active{
+    color: white;
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20vh 0 0 0;
+}
+main .showcase-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+main .showcase-content .title {
+    margin-bottom: 5%;
+}
+main .showcase-content .title h1, p, h2 {
+    text-align: center;
+    margin: 0;
+    color: white;
+}
+main .showcase-content .title h1 {
+    font-size: 5em;
+}
+main .showcase-content .title p {
+    font-size: 2em;
+}
+main .showcase-content form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+main .showcase-content form .search-box {
+    width: 100%;
+    margin-bottom: 5%;
+    display: flex;
+    align-items: center;
+}
+main .showcase-content form .search-box input {
+    width: 90%;
+    background-color: #202124;
+    border: 1px solid #5f6368;
+    height: 44px;
+    border-radius: 24px;
+    font-size: 1em;
+    color: white;
+    transition: border 0.3s;
+    text-indent: 5%;
+}
+main .showcase-content form .search-box input:hover {
+    border: 1px solid white;
+}
+main .showcase-content form .search-box input:focus::placeholder {
+    color: transparent;
+}
+main .showcase-content form .search-box button {
+    width: 8%;
+    display: flex;
+    height: 44px;
+    margin-left: 2%;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+    transition: all 0.3s;
+    border-radius: 40px;
+}
+main .showcase-content form .search-box button:hover {
+    background-color: #202124;
+}
+main .showcase-content form .search-box i {
+    font-size: 1.5em;
+    color: white;
+}
+main .showcase-content form .buttons {
+    display: flex;
+    justify-content: center;
+    flex: 2;
+}
+main .showcase-content form .buttons input {
+    background-color: #555555;
+    border: 1px solid #555555;
+    border-radius: 24px;
+    padding: 0 2em;
+    height: 44px;
+    cursor: pointer;
+    color: white;
+    margin: 0 5% 5% 5%;
+    font-size: 0.9em;
+}
+main .showcase-content form .buttons input:hover {
+    border-color: white;
+}
+main .showcase-content form .search-box p {
+    margin-right: 3%;
+    text-align: right;
+}
+main .showcase-content form .search-box.text {
+    justify-content: flex-end;
+}
+main .showcase-content form .search-box.text input {
+    max-width: 300px;
+}
+main .showcase-content .subtitle {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 5%;
+    font-size: 1.5em;
+}
+#main-footer{
+    display: flex;
+}
