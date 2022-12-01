@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Google Search</title>
+  <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+<header>
+  <nav id="navbar">
+    <ul>
+      <li>
+        <a href="index.html" class="active">Vyhledávání</a>
+      </li>
+      <li>
+        <a href="images.html">Vyhledávání obrázků</a>
+      </li>
+      <li>
+        <a href="advanced.html">Rozšířené vyhledávání</a>
+      </li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <div class="showcase-content">
+    <div class="title">
+      <h1>Google Search</h1>
+      <p>Pokročilé vyhledávání</p>
+    </div>
+    <div class="title">
+      <p>Najít stránky...</p>
+    </div>
+    <form action="https://www.google.com/search" name="f">
+      <div class="search-box">
+        <p>Všechna tato slova:</p>
+        <input type="text" name="as_q" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div class="search-box">
+        <p>Toto přesné slovo nebo fráze:</p>
+        <input type="text" name="as_epq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div class="search-box">
+        <p>Kterékoli z těchto slov:</p>
+        <input type="text" name="as_oq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div class="search-box">
+        <p>Žádné z těchto slov:</p>
+        <input type="text" name="as_eq" placeholder="Sem napiš hledaný výraz" autocomplete="off" autocorrect="off" autocapitalize="off" spellcheck="false">
+      </div>
+      <div class="buttons">
+        <input type="submit" value="Pokročilé hledání" name="btnK">
+      </div>
+    </form>
+  </div>
+</main>
+</body>
+
+</html>
