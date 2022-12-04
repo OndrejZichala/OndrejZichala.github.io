@@ -58,7 +58,7 @@ main .showcase-content .title h1, p, h2 {
     text-align: center;
     margin: 0;
     color: white;
-    padding: 0.3rem;
+    padding:0.3rem;
 }
 main .showcase-content .title h1 {
     font-size: 4rem;
