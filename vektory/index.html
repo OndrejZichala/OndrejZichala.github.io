@@ -7,46 +7,47 @@
     <script>        // načítám celou stránku (DOM)
     document.addEventListener('DOMContentLoaded', () => {
 
-        document.querySelector('#ax').value = "";
-        document.querySelector('#ay').value ="";
-        document.querySelector('#bx').value ="";
-        document.querySelector('#by').value ="";
-        document.querySelector('#cx').value ="";
-        document.querySelector('#cy').value ="";
-        document.querySelector('#dx').value = "";
-        document.querySelector('#dy').value = "";
-        // jakmile provedu submit, spustím funkci
-        document.querySelector('form').onsubmit = () => {
+            document.querySelector('#ax').value = "";
+            document.querySelector('#ay').value = "";
+            document.querySelector('#bx').value = "";
+            document.querySelector('#by').value = "";
+            document.querySelector('#cx').value = "";
+            document.querySelector('#cy').value = "";
+            document.querySelector('#dx').value = "";
+            document.querySelector('#dy').value = "";
+            // jakmile provedu submit, spustím funkci
+            document.querySelector('form').onsubmit = () => {
 
-            // načtu hodnoty do proměnných
-            let ax = document.querySelector('#ax').value;
-            let ay = document.querySelector('#ay').value;
-            let bx = document.querySelector('#bx').value;
-            let by = document.querySelector('#by').value;
-            let cx = document.querySelector('#cx').value;
-            let cy = document.querySelector('#cy').value;
-            let dx = document.querySelector('#dx').value;
-            let dy = document.querySelector('#dy').value;
-            // výpočet
-            let delkau = (Math.sqrt((bx - ax)*(bx - ax)+(by - ay)*(by - ay)));
-            let delkav = (Math.sqrt((dx - cx)*(dx - cx)+(dy - cy)*(dy - cy)));
-            let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy);
-            let odchylka = soucin / (delkau * delkav);
-            let odchylkastupne = Math.acos(odchylka)*(180/Math.PI);
-            // výstup
-            document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau.toFixed(2)}`;
-            document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav.toFixed(2)}`;
-            document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)},${(by - ay)+(dy - cy)})`;
-            document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay)-(dy - cy)})`;
-            document.querySelector("#soucin").innerHTML = `Skalární součin vektoru u a v: ${soucin}`;
-            document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylkastupne.toFixed(2)}°`;
-             // stop form from submiting
-            return false;             }
+                // načtu hodnoty do proměnných
+                let ax = document.querySelector('#ax').value;
+                let ay = document.querySelector('#ay').value;
+                let bx = document.querySelector('#bx').value;
+                let by = document.querySelector('#by').value;
+                let cx = document.querySelector('#cx').value;
+                let cy = document.querySelector('#cy').value;
+                let dx = document.querySelector('#dx').value;
+                let dy = document.querySelector('#dy').value;
+                // výpočet
+                let delkau = (Math.sqrt((bx - ax) * (bx - ax) + (by - ay) * (by - ay)));
+                let delkav = (Math.sqrt((dx - cx) * (dx - cx) + (dy - cy) * (dy - cy)));
+                let soucin = (bx - ax) * (dx - cx) + (by - ay) * (dy - cy);
+                let odchylka = soucin / (delkau * delkav);
+                let odchylkastupne = Math.acos(odchylka) * (180 / Math.PI);
+                // výstup
+                document.querySelector("#delkau").innerHTML = `Délka vektoru u: ${delkau.toFixed(2)}`;
+                document.querySelector("#delkav").innerHTML = `Délka vektoru v: ${delkav.toFixed(2)}`;
+                document.querySelector("#soucet").innerHTML = `Součet vektorů u a v: (${(bx - ax) + (dx - cx)},${(by - ay) + (dy - cy)})`;
+                document.querySelector("#rozdil").innerHTML = `Rozdíl vektorů u a v: (${(bx - ax) - (dx - cx)},${(by - ay) - (dy - cy)})`;
+                document.querySelector("#soucin").innerHTML = `Skalární součin vektoru u a v: ${soucin}`;
+                document.querySelector("#odchylka").innerHTML = `Odchylka vektorů u a v: ${odchylkastupne.toFixed(2)}°`;
+                // stop form from submiting
+                return false;
+            }
 
 
         }
     )
-        ;     </script>
+    ;     </script>
 </head>
 <body>
 <form> A:
