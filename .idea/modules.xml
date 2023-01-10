@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/OndrejZichala.github.io.iml" filepath="$PROJECT_DIR$/.idea/OndrejZichala.github.io.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../fcc-02-tribute-page-OndrejZichala/.idea/fcc-02-tribute-page-OndrejZichala.iml" filepath="$PROJECT_DIR$/../fcc-02-tribute-page-OndrejZichala/.idea/fcc-02-tribute-page-OndrejZichala.iml" />
     </modules>
   </component>
 </project>
