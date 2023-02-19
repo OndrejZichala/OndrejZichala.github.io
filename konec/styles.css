@@ -124,16 +124,7 @@
 #contact .icons a:hover{
     color: darkblue;
 }
-#footer{
-    width: 100%;
-    height: 100px;
-    background: darkblue;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    color: white;
-    font-size: large;
-}
+
 @media only screen and (max-width: 769px){
     #projects{
         height: 2000px;
